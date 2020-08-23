@@ -1,7 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="8e4f131e-3dc7-44d2-bc70-756005043b40" name="Default Changelist" comment="" />
+    <list default="true" id="8e4f131e-3dc7-44d2-bc70-756005043b40" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BackgroundCustom/Media/Input_image/2629f127-8012-425b-b7f1-49dc0ae2136d.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BackgroundCustom/Media/Input_image/68bdf13c-e6b2-4842-8bc7-959049cbc885.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BackgroundCustom/Media/Input_image/7ca69197-f4e9-4493-8aad-86a03c94166c.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BackgroundCustom/Media/Input_image/ba570535-2997-4b4f-bd02-7c315d656ed1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BackgroundCustom/Media/Input_image/bf8b7b31-be9d-403b-bb58-af7f713bcef9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BackgroundCustom/Media/Input_image/e2d66a23-dc22-4de7-b2ef-00497074e98d.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BackgroundCustom/Media/Input_image/ea9713be-e0d1-4c98-9f9a-52496798058f.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BackgroundCustom/Media/Input_image/f47acc51-fa4e-40b1-9cea-d307402caba1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BackgroundCustom/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/BackgroundCustom/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,6 +36,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1gSO0dX9GsjkhxYpBowPb66HYpD" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -21,7 +46,9 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
   </component>
   <component name="RunManager">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
@@ -57,11 +84,26 @@
     </task>
     <servers />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="WindowStateProjectService">
-    <state x="341" y="184" width="1052" height="737" key="SettingsEditor" timestamp="1598104538926">
+    <state x="631" y="316" key="FileChooserDialogImpl" timestamp="1598213680508">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state x="341" y="184" width="1052" height="737" key="SettingsEditor/72.27.1848.1053@72.27.1848.1053" timestamp="1598104538926" />
+    <state x="631" y="316" key="FileChooserDialogImpl/72.27.1848.1053@72.27.1848.1053" timestamp="1598213680508" />
+    <state x="341" y="184" width="1052" height="737" key="SettingsEditor" timestamp="1598217034183">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state x="341" y="184" width="1052" height="737" key="SettingsEditor/72.27.1848.1053@72.27.1848.1053" timestamp="1598217034183" />
     <state x="658" y="259" width="673" height="678" key="search.everywhere.popup" timestamp="1598105362615">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
