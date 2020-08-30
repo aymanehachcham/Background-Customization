@@ -15,9 +15,13 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from django.conf.urls import url
+from django.views.static import serve
+from BackgroundCustom import settings
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path(r'bg_custom/', include('API.urls'))
+    path(r'bg_custom/', include('API.urls')),
+    url(r'^api/Media/(?P<path>.*)$', serve, {'document_root': settings.MEDIA_ROOT})
 ]
 

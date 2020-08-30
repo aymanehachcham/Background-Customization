@@ -17,8 +17,13 @@ class SemanticSeg(nn.Module):
 
         self.model = self.load_model(pretrained)
 
-    def __getitem__(self, item):
-        return self.model
+    def forward(self, input: SegmentationSample):
+        # Run the model in the respective device:
+        with torch.no_grad():
+            output = self.model(input.processed_image)['out']
+
+        reshaped_output = torch.argmax(output.squeeze(), dim=0).detach().cpu()
+        return reshaped_output
 
     # Add the Backbone option in the parameters
     def load_model(self, pretrained=False):
@@ -32,20 +37,14 @@ class SemanticSeg(nn.Module):
         return model
 
     def run_inference(self, image_foreground: SegmentationSample, image_background: SegmentationSample):
-        # Run the model in the respective device:
-        with torch.no_grad():
-            output = self.model(image_foreground.processed_image)['out']
-
-        reshaped_output = torch.argmax(output.squeeze(), dim=0).detach().cpu().numpy()
-        return self.background_custom(reshaped_output, image_foreground.image_file, image_background.image_file)
+        model = SemanticSeg(pretrained=True, device='cuda')
+        output = model(image_foreground)
+        return self.background_custom(output, image_foreground.image_file, image_background.image_file)
 
     def run_grayscale_inference(self, image_foreground: SegmentationSample):
-        # Run the model in the respective device:
-        with torch.no_grad():
-            output = self.model(image_foreground.processed_image)['out']
-
-        reshaped_output = torch.argmax(output.squeeze(), dim=0).detach().cpu().numpy()
-        return self.grayscale_background(reshaped_output, image_foreground.image_file)
+        model = SemanticSeg(pretrained=True, device='cuda')
+        output = model(image_foreground)
+        return self.grayscale_background(output, image_foreground.image_file)
 
 
     def background_custom(self, input_image, source, background_source,number_channels=21):
